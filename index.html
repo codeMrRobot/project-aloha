@@ -24,6 +24,7 @@
         <div class="cart">
             <span class="screen-reader">Shopping Cart</span>
             <img src="images/cart-icon.svg" alt="Link to your shopping cart" class="cart" />
+            <div class= "cartNumber">0</div>
         </div>
 
         <nav class="nav-list">
@@ -70,27 +71,39 @@
     <section class="category-blocks" id="shop">
 
         <div class="category-wide mens box">
-            <a href="#">Men's</a>
+            <span class="category-name">
+                <a href="#">Men's</a>
+            </span>
         </div>
 
         <div class="category-small trends box">
-            <a href="#">Trends</a>
+            <span class="category-name">
+                <a href="#">Trends</a>
+            </span>
         </div>
 
         <div class="category-small glasses box">
-            <a href="#">Glasses</a>
+            <span class="category-name">
+                <a href="#">Glasses</a>
+            </span>
         </div>
 
         <div class="category-small sale box">
-            <a href="#">Sale</a>
+            <span class="category-name">
+                <a href="#">Sale</a>
+            </span>
         </div>
 
         <div class="category-small bags box">
-            <a href="#">Bags</a>
+            <span class="category-name">
+                <a href="#">Bags</a>
+            </span>
         </div>
 
         <div class="category-wide womens box">
-            <a href="#">Women's</a>
+            <span class="category-name">
+                <a href="#">Women's</a>
+            </span>
         </div>
 
 
@@ -103,39 +116,62 @@
                 <span class="heavy"> Products</span>
             </h2>
 
-            <div class="main-carousel">
+            <div class="main-carousel"
+                        data-flickity='{ "groupCells": 2, "wrapAround": true }'>
+                    <!-- data-flickity-options='{ "wrapAround": true }'> -->
 
                 <div class="carousel-cell">
                     <img src="images/checked-stretch-dress.jpg" alt="Checked Stretch dress">
                     <p class="product-type">dresses</p>
                     <h3>Checked Stretch Dress</h3>
                     <p class="price">$129.00</p>
+                    <button type="button" class="add">Add to Cart</button>
                 </div>
-    
+
                 <div class="carousel-cell">
-                        <img src="images/blue-hipster-backpack.jpg" alt="Blue hipster backpack">
-                        <p class="product-type">bags</p>
-                        <h3>Blue Hipster Backpack</h3>
-                        <p class="price">69.00</p>
+                    <img src="images/blue-hipster-backpack.jpg" alt="Blue hipster backpack">
+                    <p class="product-type">bags</p>
+                    <h3>Blue Hipster Backpack</h3>
+                    <p class="price">69.00</p>
+                    <button type="button" class="add">Add to Cart</button>
                 </div>
-    
+
                 <div class="carousel-cell">
-                        <img src="images/demin-overall-shorts.jpg" alt="Demin overall shorts">
-                        <p class="product-type">demin</p>
-                        <h3>Demin Overall Shorts</h3>
-                        <p class="price">89.00</p>
+                    <img src="images/demin-overall-shorts.jpg" alt="Demin overall shorts">
+                    <p class="product-type">demin</p>
+                    <h3>Demin Overall Shorts</h3>
+                    <p class="price">89.00</p>
+                    <button type="button" class="add">Add to Cart</button>
+
+                </div>
+
+                <div class="carousel-cell">
+                    <img src="images/pink-dotted-dress.jpg" alt="Pink dotted dress">
+                    <p class="product-type">dresses</p>
+                    <h3>Pink Dotted Dress</h3>
+                    <p class="price">99.00</p>
+                    <button type="button" class="add">Add to Cart</button>
+                </div>
+
+                <div class="carousel-cell">
+                    <img src="images/blue-silk-dress.jpg" alt="Blue silk dress">
+                    <p class="product-type">dresses</p>
+                    <h3>Blue Silk Dress</h3>
+                    <p class="price">119.00</p>
+                    <button type="button" class="add">Add to Cart</button>
+                </div>
                     
-                </div>
-    
                 <div class="carousel-cell">
-                        <img src="images/pink-dotted-dress.jpg" alt="Pink dotted dress">
-                        <p class="product-type">dresses</p>
-                        <h3>Pink Dotted Dress</h3>
-                        <p class="price">99.00</p>
-                    
+                    <img src="images/stretch-knit-dress.jpg" alt="Stretch knit dress">
+                    <p class="product-type">dresses</p>
+                    <h3>Stretch knit Dress</h3>
+                    <p class="price">129.00</p>
+                    <button type="button" class="add">Add to Cart</button>
                 </div>
+
+                
             </div>
-            
+
 
         </div>
 
@@ -150,8 +186,8 @@
                 from our blog. Unsubscribe at any time.</p>
             <form>
                 <div class="form-wrap">
-                    <input type="email" name="your-email" id="your-email" value placeholder="Your Email">
-                    <input type="submit" name="subscribe" value="Subscribe" id="subcribe">
+                    <input class="email-text" type="email" name="your-email" id="your-email" value placeholder="Your Email">
+                    <input class="subscribe-button" type="submit" name="subscribe" value="Subscribe" id="subcribe">
 
                 </div>
 
@@ -225,10 +261,16 @@
 
         </div>
 
-     <!-- javascript files -->
-     <script src="flickity.pkgd.min.js"></script>
-     <script src="javascript.js"></script>
-     
+        <!-- javascript files -->
+        <script src="flickity.pkgd.min.js"></script>
+        <script src="javascript.js"></script>
+        <script type="text/javascript">
+            var clicks = 0;
+            function updateClickCount() {
+                document.getElementById("clickCount").innerHTML = clicks;
+            }
+        </script>
+
 
     </footer>
 

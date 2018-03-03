@@ -1,16 +1,28 @@
 $(document).ready(function () {
-    $('.main-carousel').flickity({
-        // options
-        cellAlign: 'left',
-        contain: true
-    });
-
-
-
-    
-
-
-});
+    /* EMAIL SUBSCRIBE */
+    function validateEmail(sEmail) {
+      var filter = /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/;
+      if (filter.test(sEmail)) {
+        return true;
+      }
+      else {
+        return false;
+      }
+    }
+  $('.subscribe-button').click(function (e) {
+    e.preventDefault();
+    var sEmail = $('.email-text').val();
+    if ($.trim(sEmail).length == 0) {
+      alert("please enter a valid e-mail");
+    }
+    if (validateEmail(sEmail)) {
+      alert("Thank you for subscribing")
+    }
+    else {
+      alert("Invalid Email address");
+    }
+  });
+  /* VALIDATION EMAIL */
 
 // smooth scroll from css tricks //
 
@@ -50,4 +62,32 @@ $('a[href*="#"]')
         });
       }
     }
+    
   });
+  /* CAROUSEL */
+  $('.main-carousel').flickity({
+    // options
+    cellAlign: 'left',
+    contain: true,
+  
+    
+});
+
+$('.cartNumber').hide();
+
+ $('.carousel-cell').on('click', 'button', function (event){
+   event.preventDefault(); 
+   $('.cartNumber').show();
+
+   var item = parseInt($(".cartNumber").text(), 10);
+   $('.cartNumber').html(item = item +1);
+   $('html, body').animate({
+    scrollTop: 0
+  }, 1000);
+ });
+
+ 
+      
+});
+
+
