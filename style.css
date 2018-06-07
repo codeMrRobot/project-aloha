@@ -537,6 +537,7 @@ h3{
 
     @media only screen and (min-width: 768px) {
         
+        
         .category-small, .category-wide{
             height:200px;
         }
@@ -758,3 +759,24 @@ h3{
 	}
 }
 
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+ }
+
+ .screen-reader-text:focus {
+    clip: auto !important;
+    display: block;
+    height: auto;
+    left: 5px;
+    top: 5px;
+    width: auto;
+    z-index: 100000; /* above all content */
+ }
+
+ #shop[tabindex="-1"]:focus {
+    outline: 0;
+ }
