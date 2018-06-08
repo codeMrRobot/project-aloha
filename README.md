@@ -25,6 +25,8 @@
 
 ## Screenshots
 
-<img scr="https://imgur.com/a/Bwq2UlR.png" width="120">
+![](screenshots/aloha.png)
+![](screenshots/aloha2.png)
+![](screenshots/aloha3.png)
 
 
