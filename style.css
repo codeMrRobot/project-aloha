@@ -169,6 +169,9 @@ html {
     justify-content: space-between;
     padding-bottom: .5rem;
     padding-top: 1rem;
+    position:fixed;
+    background-color:white;
+    z-index: 3;
 }
 
 .aloha-logo {
