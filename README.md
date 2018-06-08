@@ -25,6 +25,6 @@
 
 ## Screenshots
 
-![img](https://imgur.com/a/Bwq2UlR)
+![img](https://imgur.com/a/Bwq2UlR.png)
 
 
