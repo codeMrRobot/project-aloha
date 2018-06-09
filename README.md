@@ -25,8 +25,8 @@
 
 ## Screenshots
 
+![](screenshots/aloham.png)
+![](screenshots/alohat.png)
 ![](screenshots/aloha.png)
-![](screenshots/aloha2.png)
-![](screenshots/aloha3.png)
 
 

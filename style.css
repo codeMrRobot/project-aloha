@@ -707,7 +707,7 @@ h3{
         }
 
         .cartNumber{
-            right: 7px;
+            right: 10px;
         }
 
         .about-text{
@@ -751,7 +751,7 @@ h3{
     @media only screen and (min-width: 1240px) {
 
     .container {
-     max-width: 1240px;
+     max-width: 1440px;
     }
     .about-text{
         width: 720px
@@ -772,8 +772,8 @@ h3{
         width: 62px;
     }
     .cartNumber{
-        right: 125px;
-        top: 25px;
+        right: 25px;
+        top: 20px;
     }
 	.nav-bar{
 		order: 2;
