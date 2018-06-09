@@ -24,9 +24,10 @@
 * Having multiple components in compartments made it easier to change the text and images; e.g., responsive header.
 
 ## Screenshots
+* Mobile/Tablet/Desktop views below
 
-![](screenshots/aloham.png)
-![](screenshots/alohat.png)
-![](screenshots/aloha.png)
+![](screenshots/aloham.png){:height="300px"}
+![](screenshots/alohat.png){:height="300px"}
+![](screenshots/aloha.png){:height="300px"}
 
 
