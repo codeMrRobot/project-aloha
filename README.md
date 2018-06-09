@@ -25,9 +25,9 @@
 
 ## Screenshots
 * Mobile/Tablet/Desktop views below
-<img src="screenshots/aloham.png" width="150px">
-<img src="screenshots/alohat.png" width="150px">
-<img src="screenshots/aloha.png" width="150px">
+<img src="screenshots/aloham.png" width="150px"> <img src="screenshots/alohat.png" width="150px"> <img src="screenshots/aloha.png" width="150px">
+
+
 
 
 
