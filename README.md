@@ -25,7 +25,7 @@
 
 ## Screenshots
 * Mobile/Tablet/Desktop views below
-
+<img src="screenshots/aloham.png" width="125" height="125">
 ![](screenshots/aloham.png){:height="300px"}
 ![](screenshots/alohat.png){:height="300px"}
 ![](screenshots/aloha.png){:height="300px"}
