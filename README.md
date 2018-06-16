@@ -3,7 +3,7 @@
 # Project Summary
 
  This project was focused on building a responsive demo homepage called Aloha Apparel Co. It was built
- to accommodate the different viewing sizes such as mobile, tablet, and desktop verions. Towards the end, I implemented
+ to accommodate the different viewing sizes such as mobile, tablet, and desktop versions. Towards the end, I implemented
  Javascript components for finishing touches.
  
 ## Screenshots Mobile/Tablet/Desktop
