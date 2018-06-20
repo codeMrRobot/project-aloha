@@ -563,7 +563,7 @@ h3{
 }    
 .newsletter{
         background:linear-gradient(180deg,rgba(0,0,0,.15) 0,rgba(0,0,0,.15)),
-        url(images/wave-bkgd.jpg) no-repeat bottom;
+        url(images/wave-bkgd.jpg) no-repeat bottom/185rem 100%;
         color:white;
         text-align:center;
         margin-bottom: 8px;
