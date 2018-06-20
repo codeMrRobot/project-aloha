@@ -246,7 +246,7 @@ img {
 .nav-list li{
     display: inline-block;
     font-weight: 700;
-    margin: 0 1rem;
+    padding: 0 0.8rem;
     text-transform: uppercase;
 }
 
